@@ -12,19 +12,22 @@ public class Solution {
      * @return
      */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
         // 当l1为空，或者仅有1位且为0，则直接返回l2
         if (isZeroOrNull(l1)) {
             return l2;
         }
+
         // 当l2为空，或者仅有1位且为0，则直接返回l1
         if (isZeroOrNull(l2)) {
             return l1;
         }
 
+        ListNode result = l1;
+
         int carry = 0; // 进位，只可能是0或者1
         int curL1Val = 0; // 当前的l1值
         int curL2Val = 0; // 当前的l2值
-        int curLLastVal = 0;
         int curResultVal = 0; // 当前位的计算结果
 
         // 这部分是l1和l2长度相同的部分，两个指针同时前进
@@ -66,6 +69,7 @@ public class Solution {
 
         l1.next = lLast;
 
+        ListNode lEnd = l1;
         while (lLast != null) {
             curResultVal = lLast.val + carry;
             if (curResultVal >= 10) {
@@ -75,15 +79,17 @@ public class Solution {
                 carry = 0;
             }
             lLast.val = curResultVal;
+            lEnd = lLast;
             lLast = lLast.next;
         }
 
+        // 最后一位有进位
         if (carry == 1) {
             ListNode end = new ListNode(1);
-            lLast.next = end;
+            lEnd.next = end;
         }
 
-        return l1;
+        return result;
     }
 
     private boolean isZeroOrNull(ListNode listNode) {
@@ -93,4 +99,5 @@ public class Solution {
     private boolean isListEnd(ListNode listNode) {
         return listNode.next == null;
     }
+
 }

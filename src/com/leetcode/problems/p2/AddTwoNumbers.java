@@ -15,6 +15,37 @@ public class AddTwoNumbers {
 
     public static void main(String[] args) {
 
+        ListNode l1 = new ListNode(9);
+        ListNode l11 = new ListNode(9);
+        ListNode l12 = new ListNode(9);
+        l1.next = l11;
+        l11.next = l12;
+
+        ListNode l2 = new ListNode(9);
+        ListNode l21 = new ListNode(9);
+        ListNode l22 = new ListNode(9);
+        ListNode l23 = new ListNode(9);
+        l2.next = l21;
+        l21.next = l22;
+        l22.next = l23;
+
+        Solution solution = new Solution();
+        ListNode result = solution.addTwoNumbers(l1, l2);
+
+        print(result);
+
+    }
+
+    private static void print(ListNode listNode) {
+        if (listNode != null) {
+            StringBuilder sb = new StringBuilder();
+            while (listNode.next != null) {
+                sb.append(listNode.val).append(" -> ");
+                listNode = listNode.next;
+            }
+            sb.append(listNode.val);
+            System.out.println(sb.toString());
+        }
     }
 
 }
