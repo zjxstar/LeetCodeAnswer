@@ -1,9 +1,7 @@
 package com.leetcode.problems.p7;
 
 
-import java.math.BigInteger;
-
-public class Solution {
+public class Solution2 {
 
     public int reverse(int x) {
         if (x == 0) {
@@ -33,12 +31,9 @@ public class Solution {
             result.append(strX.charAt(end));
         }
 
-        BigInteger big = new BigInteger(result.toString());
-        if (big.shiftRight(31).compareTo(new BigInteger("0")) > 0) {
-            return 0;
-        }
+        long xL = Long.valueOf(result.toString());
 
-        if (flag && big.abs().shiftRight(31).compareTo(new BigInteger("1")) > 0) {
+        if (xL > Integer.MAX_VALUE || xL < Integer.MIN_VALUE) {
             return 0;
         }
 

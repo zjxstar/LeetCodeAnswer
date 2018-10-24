@@ -19,7 +19,10 @@ import java.math.BigInteger;
 public class ReverseInteger {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.reverse(-123);
+        Solution2 solution = new Solution2();
+//        System.out.println(solution.reverse(123));
+//        System.out.println(solution.reverse(-123));
+//        System.out.println(solution.reverse(-12300));
+        System.out.println(solution.reverse(-1563847412));
     }
 }
