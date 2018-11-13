@@ -2,6 +2,11 @@ package com.leetcode.problems.p14;
 
 public class Solution {
 
+    /**
+     * 随便取一个字符串，从第一个字符开始，取子串
+     * @param strs
+     * @return
+     */
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
             return "";
