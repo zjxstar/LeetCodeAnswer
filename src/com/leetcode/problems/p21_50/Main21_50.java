@@ -7,8 +7,8 @@ public class Main21_50 {
 
     public static void main(String[] args) {
 //        solveP21();
-
-        solveP26();
+//        solveP26();
+        solveP27();
     }
 
     private static void solveP21() {
@@ -59,6 +59,25 @@ public class Main21_50 {
         System.out.println("nums3 的新长度：" + p26.removeDuplicates(nums3));
         System.out.println("----------删除重复元素后的nums3----------");
         for (int num : nums3) {
+            System.out.print(num + " ");
+        }
+    }
+
+    private static void solveP27() {
+        P27RemoveElement p27RemoveElement = new P27RemoveElement();
+        int[] nums1 = new int[] {0,1,2,2,3,0,4,2};
+        System.out.println("nums1的新长度：" + p27RemoveElement.removeElement(nums1, 2));
+        System.out.println("--------------------删除2后的数组-------------------");
+        for (int num : nums1) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println();
+
+        int[] nums2 = new int[] {0,1,2,2,3,2,4,5,2,7,2,2};
+        System.out.println("nums2的新长度：" + p27RemoveElement.removeElement(nums2, 2));
+        System.out.println("--------------------删除2后的数组-------------------");
+        for (int num : nums2) {
             System.out.print(num + " ");
         }
     }
