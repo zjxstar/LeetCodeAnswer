@@ -8,7 +8,8 @@ public class Main21_50 {
     public static void main(String[] args) {
 //        solveP21();
 //        solveP26();
-        solveP27();
+//        solveP27();
+        solve28();
     }
 
     private static void solveP21() {
@@ -80,6 +81,13 @@ public class Main21_50 {
         for (int num : nums2) {
             System.out.print(num + " ");
         }
+    }
+
+    private static void solve28() {
+        P28Str p28Str = new P28Str();
+        System.out.println(p28Str.strStr("hello", "ll"));
+        System.out.println(p28Str.strStr("hello", "a"));
+        System.out.println(p28Str.strStr("hello", ""));
     }
 
 }
