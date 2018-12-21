@@ -1,5 +1,7 @@
 package com.leetcode.problems.p21_50;
 
+import java.util.List;
+
 /**
  * 所有的都在这里运行
  */
@@ -9,7 +11,8 @@ public class Main21_50 {
 //        solveP21();
 //        solveP26();
 //        solveP27();
-        solve28();
+//        solve28();
+        solve22();
     }
 
     private static void solveP21() {
@@ -88,6 +91,14 @@ public class Main21_50 {
         System.out.println(p28Str.strStr("hello", "ll"));
         System.out.println(p28Str.strStr("hello", "a"));
         System.out.println(p28Str.strStr("hello", ""));
+    }
+
+    private static void solve22() {
+        P22GenerateParentheses p22GenerateParentheses = new P22GenerateParentheses();
+        List<String> result = p22GenerateParentheses.generateParenthesis(3);
+        for (String str : result) {
+            System.out.println(str);
+        }
     }
 
 }
