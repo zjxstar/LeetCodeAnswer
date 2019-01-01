@@ -12,12 +12,13 @@ public class Main21_50 {
 //        solveP26();
 //        solveP27();
 //        solve28();
-        solve22();
+//        solve22();
+        solve24();
     }
 
     private static void solveP21() {
         P21MergeTwoSortedLists p21 = new P21MergeTwoSortedLists();
-        P21MergeTwoSortedLists.ListNode result = p21.mergeTwoLists(p21.createList1(), p21.createList2());
+        ListNode result = p21.mergeTwoLists(p21.createList1(), p21.createList2());
 //        P21MergeTwoSortedLists.ListNode result = p21.mergeTwoLists(null, p21.createList2());
 //        P21MergeTwoSortedLists.ListNode result = p21.mergeTwoLists(p21.createList1(), null);
 
@@ -98,6 +99,36 @@ public class Main21_50 {
         List<String> result = p22GenerateParentheses.generateParenthesis(3);
         for (String str : result) {
             System.out.println(str);
+        }
+    }
+
+    private static void solve24() {
+        ListNode head = new ListNode(1);
+//        head = null;
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
+        head.next.next.next.next.next.next = new ListNode(7);
+//        printListNode(head);
+        P24SwapNodesInPairs p24SwapNodesInPairs = new P24SwapNodesInPairs();
+        ListNode result = p24SwapNodesInPairs.swapPairs(head);
+        printListNode(result);
+    }
+
+    private static void printListNode(ListNode head) {
+        if (head == null) {
+            System.out.println("ListNode is Null");
+            return;
+        }
+        while (head != null) {
+            if (head.next == null) {
+                System.out.println(head.val);
+            } else {
+                System.out.print(head.val + " -> ");
+            }
+            head = head.next;
         }
     }
 
