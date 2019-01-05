@@ -14,7 +14,8 @@ public class Main21_50 {
 //        solve28();
 //        solve22();
 //        solve24();
-        solve29();
+//        solve29();
+        solve31();
     }
 
     private static void solveP21() {
@@ -124,6 +125,21 @@ public class Main21_50 {
 //        System.out.println(p29DivideTwoIntegers.divide2(7, -3));
         System.out.println(p29DivideTwoIntegers.divide2(-2147483648, 2));
 //        System.out.println(p29DivideTwoIntegers.divide2(2147483647, 1));
+    }
+
+    private static void solve31() {
+        P31NextPermutation p31NextPermutation = new P31NextPermutation();
+        int[] nums = new int[] {
+            3, 2, 1
+        };
+        p31NextPermutation.nextPermutation(nums);
+        printNums(nums);
+    }
+
+    private static void printNums(int[] nums) {
+        for (int i : nums) {
+            System.out.print(i + " ");
+        }
     }
 
     private static void printListNode(ListNode head) {
