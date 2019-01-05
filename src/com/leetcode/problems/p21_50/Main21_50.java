@@ -13,7 +13,8 @@ public class Main21_50 {
 //        solveP27();
 //        solve28();
 //        solve22();
-        solve24();
+//        solve24();
+        solve29();
     }
 
     private static void solveP21() {
@@ -115,6 +116,14 @@ public class Main21_50 {
         P24SwapNodesInPairs p24SwapNodesInPairs = new P24SwapNodesInPairs();
         ListNode result = p24SwapNodesInPairs.swapPairs(head);
         printListNode(result);
+    }
+
+    private static void solve29() {
+        P29DivideTwoIntegers p29DivideTwoIntegers = new P29DivideTwoIntegers();
+//        System.out.println(p29DivideTwoIntegers.divide2(10, 3));
+//        System.out.println(p29DivideTwoIntegers.divide2(7, -3));
+        System.out.println(p29DivideTwoIntegers.divide2(-2147483648, 2));
+//        System.out.println(p29DivideTwoIntegers.divide2(2147483647, 1));
     }
 
     private static void printListNode(ListNode head) {
