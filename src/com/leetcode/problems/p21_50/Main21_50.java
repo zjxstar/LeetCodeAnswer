@@ -15,7 +15,8 @@ public class Main21_50 {
 //        solve22();
 //        solve24();
 //        solve29();
-        solve31();
+//        solve31();
+        solve33();
     }
 
     private static void solveP21() {
@@ -134,6 +135,13 @@ public class Main21_50 {
         };
         p31NextPermutation.nextPermutation(nums);
         printNums(nums);
+    }
+
+    private static void solve33() {
+        P33SearchInRotatedSortedArray p33 = new P33SearchInRotatedSortedArray();
+        int nums[] = {4, 5, 6, 7, 0 ,1, 2};
+        System.out.println(p33.search(nums, 0));
+        System.out.println(p33.search(nums, 3));
     }
 
     private static void printNums(int[] nums) {
