@@ -16,7 +16,8 @@ public class Main21_50 {
 //        solve24();
 //        solve29();
 //        solve31();
-        solve33();
+//        solve33();
+        solve34();
     }
 
     private static void solveP21() {
@@ -142,6 +143,13 @@ public class Main21_50 {
         int nums[] = {4, 5, 6, 7, 0 ,1, 2};
         System.out.println(p33.search(nums, 0));
         System.out.println(p33.search(nums, 3));
+    }
+
+    private static void solve34() {
+        P34FindFirstAndLastPosition p34 = new P34FindFirstAndLastPosition();
+        int nums[] = {5, 7, 7, 8, 8, 10};
+        int[] result = p34.searchRange(nums, 6);
+        printNums(result);
     }
 
     private static void printNums(int[] nums) {
