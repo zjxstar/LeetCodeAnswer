@@ -17,7 +17,8 @@ public class Main21_50 {
 //        solve29();
 //        solve31();
 //        solve33();
-        solve34();
+//        solve34();
+        solve35();
     }
 
     private static void solveP21() {
@@ -150,6 +151,15 @@ public class Main21_50 {
         int nums[] = {5, 7, 7, 8, 8, 10};
         int[] result = p34.searchRange(nums, 6);
         printNums(result);
+    }
+
+    private static void solve35() {
+        P35SearchInsertPosition p35 = new P35SearchInsertPosition();
+        int[] nums = {3, 5, 7, 9, 10};
+        System.out.println(p35.searchInsert(nums, 8));
+        System.out.println(p35.searchInsert(nums, 2));
+        System.out.println(p35.searchInsert(nums, 7));
+        System.out.println(p35.searchInsert(nums, 0));
     }
 
     private static void printNums(int[] nums) {
