@@ -24,6 +24,12 @@ package com.leetcode.problems.p21_50;
  */
 public class P35SearchInsertPosition {
 
+    /**
+     * 二分查找
+     * @param nums
+     * @param target
+     * @return
+     */
     public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
@@ -32,11 +38,14 @@ public class P35SearchInsertPosition {
             if (nums[mid] == target) {
                 return mid;
             }
+            // 如果没有找到对应target，只能是比当前的大或者小
             if (left == right) {
                 if (target > nums[left]) {
+                    // 大的话，target放在右边
                     return left + 1;
                 } else {
-                    return Math.max(0, left);
+                    // 小的话，target替换当前位置
+                    return left;
                 }
             }
             if (nums[mid] < target) {
@@ -46,6 +55,7 @@ public class P35SearchInsertPosition {
             }
         }
 
-        return Math.max(0, left);
+        // 此时right < left，且 left = right + 1 且 target肯定比left值小
+        return left;
     }
 }
