@@ -18,7 +18,8 @@ public class Main21_50 {
 //        solve31();
 //        solve33();
 //        solve34();
-        solve35();
+//        solve35();
+        solve36();
     }
 
     private static void solveP21() {
@@ -160,6 +161,20 @@ public class Main21_50 {
         System.out.println(p35.searchInsert(nums, 2));
         System.out.println(p35.searchInsert(nums, 7));
         System.out.println(p35.searchInsert(nums, 0));
+    }
+
+    private static void solve36() {
+        char[][] nums = {{'5','3','.','.','7','.','.','.','.'},
+                         {'6','.','.','1','9','5','.','.','.'},
+                         {'.','9','8','.','.','.','.','6','.'},
+                         {'8','.','.','.','6','.','.','.','3'},
+                         {'4','.','.','8','.','3','.','.','1'},
+                         {'7','.','.','.','2','.','.','.','6'},
+                         {'.','6','.','.','.','.','2','8','.'},
+                         {'.','.','.','4','1','9','.','.','5'},
+                         {'.','.','.','.','8','.','.','7','9'}};
+        P36ValidSudoku p36 = new P36ValidSudoku();
+        System.out.println(p36.isValidSudoku(nums));
     }
 
     private static void printNums(int[] nums) {
