@@ -19,7 +19,8 @@ public class Main21_50 {
 //        solve33();
 //        solve34();
 //        solve35();
-        solve36();
+//        solve36();
+        solve38();
     }
 
     private static void solveP21() {
@@ -175,6 +176,16 @@ public class Main21_50 {
                          {'.','.','.','.','8','.','.','7','9'}};
         P36ValidSudoku p36 = new P36ValidSudoku();
         System.out.println(p36.isValidSudoku(nums));
+    }
+
+    private static void solve38() {
+        P38CountAndSay p38 = new P38CountAndSay();
+        System.out.println(p38.countAndSay(1));
+        System.out.println(p38.countAndSay(2));
+        System.out.println(p38.countAndSay(3));
+        System.out.println(p38.countAndSay(4));
+        System.out.println(p38.countAndSay(5));
+        System.out.println(p38.countAndSay(6));
     }
 
     private static void printNums(int[] nums) {
