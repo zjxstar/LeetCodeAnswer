@@ -20,7 +20,8 @@ public class Main21_50 {
 //        solve34();
 //        solve35();
 //        solve36();
-        solve38();
+//        solve38();
+        solve39();
     }
 
     private static void solveP21() {
@@ -188,6 +189,12 @@ public class Main21_50 {
         System.out.println(p38.countAndSay(6));
     }
 
+    private static void solve39() {
+        P39CombinationSum p39 = new P39CombinationSum();
+        int[] nums = {2, 3, 6, 7};
+        printListList(p39.combinationSum(nums, 7));
+    }
+
     private static void printNums(int[] nums) {
         for (int i : nums) {
             System.out.print(i + " ");
@@ -206,6 +213,15 @@ public class Main21_50 {
                 System.out.print(head.val + " -> ");
             }
             head = head.next;
+        }
+    }
+
+    private static void printListList(List<List<Integer>> lists) {
+        for (List<Integer> list : lists) {
+            for (Integer i : list) {
+                System.out.print( i + " ");
+            }
+            System.out.println();
         }
     }
 
