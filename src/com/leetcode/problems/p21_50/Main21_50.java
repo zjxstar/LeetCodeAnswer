@@ -21,7 +21,8 @@ public class Main21_50 {
 //        solve35();
 //        solve36();
 //        solve38();
-        solve39();
+//        solve39();
+        solve40();
     }
 
     private static void solveP21() {
@@ -193,6 +194,12 @@ public class Main21_50 {
         P39CombinationSum p39 = new P39CombinationSum();
         int[] nums = {2, 3, 6, 7};
         printListList(p39.combinationSum(nums, 7));
+    }
+
+    private static void solve40() {
+        P40CombinationSum2 p40 = new P40CombinationSum2();
+        int[] nums = {1, 1};
+        printListList(p40.combinationSum2(nums, 2));
     }
 
     private static void printNums(int[] nums) {
