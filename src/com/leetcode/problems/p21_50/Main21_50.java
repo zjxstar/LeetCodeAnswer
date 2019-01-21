@@ -22,7 +22,8 @@ public class Main21_50 {
 //        solve36();
 //        solve38();
 //        solve39();
-        solve40();
+//        solve40();
+        solve43();
     }
 
     private static void solveP21() {
@@ -200,6 +201,11 @@ public class Main21_50 {
         P40CombinationSum2 p40 = new P40CombinationSum2();
         int[] nums = {1, 1};
         printListList(p40.combinationSum2(nums, 2));
+    }
+
+    private static void solve43() {
+        P43MultiplyStrings p43MultiplyStrings = new P43MultiplyStrings();
+        System.out.println(p43MultiplyStrings.multiply("99", "999"));
     }
 
     private static void printNums(int[] nums) {
