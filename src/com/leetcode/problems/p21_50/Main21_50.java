@@ -23,7 +23,8 @@ public class Main21_50 {
 //        solve38();
 //        solve39();
 //        solve40();
-        solve43();
+//        solve43();
+        solve46();
     }
 
     private static void solveP21() {
@@ -206,6 +207,12 @@ public class Main21_50 {
     private static void solve43() {
         P43MultiplyStrings p43MultiplyStrings = new P43MultiplyStrings();
         System.out.println(p43MultiplyStrings.multiply("99", "999"));
+    }
+
+    private static void solve46() {
+        P46Permutations p46Permutations = new P46Permutations();
+        int[] nums = {1, 2, 3};
+        printListList(p46Permutations.permute(nums));
     }
 
     private static void printNums(int[] nums) {
