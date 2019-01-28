@@ -25,7 +25,8 @@ public class Main21_50 {
 //        solve40();
 //        solve43();
 //        solve46();
-        solve47();
+//        solve47();
+        solve48();
     }
 
     private static void solveP21() {
@@ -222,6 +223,17 @@ public class Main21_50 {
         printListList(p47Permutations2.permuteUnique(nums));
     }
 
+    private static void solve48() {
+        P48RotateImage p48RotateImage = new P48RotateImage();
+        int[][] arr = {
+            {1, 2, 3},
+            {4, 5, 6},
+                {7, 8, 9}
+        };
+        p48RotateImage.rotate2(arr);
+        printArrays(arr);
+    }
+
     private static void printNums(int[] nums) {
         for (int i : nums) {
             System.out.print(i + " ");
@@ -247,6 +259,15 @@ public class Main21_50 {
         for (List<Integer> list : lists) {
             for (Integer i : list) {
                 System.out.print( i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printArrays(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
