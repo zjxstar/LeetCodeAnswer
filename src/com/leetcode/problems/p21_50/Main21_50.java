@@ -24,7 +24,8 @@ public class Main21_50 {
 //        solve39();
 //        solve40();
 //        solve43();
-        solve46();
+//        solve46();
+        solve47();
     }
 
     private static void solveP21() {
@@ -213,6 +214,12 @@ public class Main21_50 {
         P46Permutations p46Permutations = new P46Permutations();
         int[] nums = {1, 2, 3};
         printListList(p46Permutations.permute(nums));
+    }
+
+    private static void solve47() {
+        P47Permutations2 p47Permutations2 = new P47Permutations2();
+        int[] nums = {1, 1, 2};
+        printListList(p47Permutations2.permuteUnique(nums));
     }
 
     private static void printNums(int[] nums) {
