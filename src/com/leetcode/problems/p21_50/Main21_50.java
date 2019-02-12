@@ -26,7 +26,8 @@ public class Main21_50 {
 //        solve43();
 //        solve46();
 //        solve47();
-        solve48();
+//        solve48();
+        solve49();
     }
 
     private static void solveP21() {
@@ -234,6 +235,14 @@ public class Main21_50 {
         printArrays(arr);
     }
 
+    private static void solve49() {
+        P49GroupAnagrams p49 = new P49GroupAnagrams();
+        String[] strs = {
+                "eat", "tea", "tan", "ate", "nat", "bat"
+        };
+        printListListStr(p49.groupAnagrams(strs));
+    }
+
     private static void printNums(int[] nums) {
         for (int i : nums) {
             System.out.print(i + " ");
@@ -259,6 +268,15 @@ public class Main21_50 {
         for (List<Integer> list : lists) {
             for (Integer i : list) {
                 System.out.print( i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printListListStr(List<List<String>> lists) {
+        for (List<String> list : lists) {
+            for (String str : list) {
+                System.out.print(str + " ");
             }
             System.out.println();
         }
