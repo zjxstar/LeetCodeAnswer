@@ -27,7 +27,8 @@ public class Main21_50 {
 //        solve46();
 //        solve47();
 //        solve48();
-        solve49();
+//        solve49();
+        solve50();
     }
 
     private static void solveP21() {
@@ -241,6 +242,11 @@ public class Main21_50 {
                 "eat", "tea", "tan", "ate", "nat", "bat"
         };
         printListListStr(p49.groupAnagrams(strs));
+    }
+
+    private static void solve50() {
+        P50Pow p50Pow = new P50Pow();
+        System.out.println(p50Pow.myPow(2.00000, Integer.MIN_VALUE));
     }
 
     private static void printNums(int[] nums) {
