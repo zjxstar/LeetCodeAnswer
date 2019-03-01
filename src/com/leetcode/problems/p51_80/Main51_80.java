@@ -7,7 +7,8 @@ public class Main51_80 {
 
     public static void main(String[] args) {
 //        solve53();
-        solve54();
+//        solve54();
+        solve55();
     }
 
     private static void solve53() {
@@ -23,6 +24,13 @@ public class Main51_80 {
         for (int num : list) {
             System.out.print(num + " ");
         }
+    }
+
+    private static void solve55() {
+        P55JumpGame p55JumpGame = new P55JumpGame();
+//        int[] nums = {2,3,1,1,4};
+        int[] nums = {3,2,1,0,4};
+        System.out.println(p55JumpGame.canJump2(nums));
     }
 
 }
