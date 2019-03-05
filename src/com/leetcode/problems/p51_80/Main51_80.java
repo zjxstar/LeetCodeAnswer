@@ -1,6 +1,7 @@
 package com.leetcode.problems.p51_80;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main51_80 {
@@ -8,7 +9,8 @@ public class Main51_80 {
     public static void main(String[] args) {
 //        solve53();
 //        solve54();
-        solve55();
+//        solve55();
+        solve56();
     }
 
     private static void solve53() {
@@ -31,6 +33,23 @@ public class Main51_80 {
 //        int[] nums = {2,3,1,1,4};
         int[] nums = {3,2,1,0,4};
         System.out.println(p55JumpGame.canJump2(nums));
+    }
+
+    private static void solve56() {
+        P56MergeIntervals p56MergeIntervals = new P56MergeIntervals();
+        List<Interval> list = new ArrayList<>();
+//        list.add(new Interval(1,3));
+//        list.add(new Interval(8,10));
+//        list.add(new Interval(15,18));
+//        list.add(new Interval(2,6));
+
+        list.add(new Interval(1, 4));
+        list.add(new Interval(2, 3));
+
+        List<Interval> result = p56MergeIntervals.merge(list);
+        for (Interval interval : result) {
+            System.out.print("[" + interval.start + "," + interval.end + "] ");
+        }
     }
 
 }
