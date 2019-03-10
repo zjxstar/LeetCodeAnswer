@@ -10,7 +10,8 @@ public class Main51_80 {
 //        solve53();
 //        solve54();
 //        solve55();
-        solve56();
+//        solve56();
+        solve58();
     }
 
     private static void solve53() {
@@ -50,6 +51,15 @@ public class Main51_80 {
         for (Interval interval : result) {
             System.out.print("[" + interval.start + "," + interval.end + "] ");
         }
+    }
+
+    private static void solve58() {
+        P58LastWordLength p58LastWordLength = new P58LastWordLength();
+        System.out.println(p58LastWordLength.lengthOfLastWord("Hello World"));
+        System.out.println(p58LastWordLength.lengthOfLastWord(""));
+        System.out.println(p58LastWordLength.lengthOfLastWord(" "));
+        System.out.println(p58LastWordLength.lengthOfLastWord("aaa "));
+        System.out.println(p58LastWordLength.lengthOfLastWord("   aaa "));
     }
 
 }
