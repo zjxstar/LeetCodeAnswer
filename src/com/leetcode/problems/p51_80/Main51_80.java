@@ -11,7 +11,8 @@ public class Main51_80 {
 //        solve54();
 //        solve55();
 //        solve56();
-        solve58();
+//        solve58();
+        solve62();
     }
 
     private static void solve53() {
@@ -60,6 +61,12 @@ public class Main51_80 {
         System.out.println(p58LastWordLength.lengthOfLastWord(" "));
         System.out.println(p58LastWordLength.lengthOfLastWord("aaa "));
         System.out.println(p58LastWordLength.lengthOfLastWord("   aaa "));
+    }
+
+    private static void solve62() {
+        P62UniquePaths p62UniquePaths = new P62UniquePaths();
+        System.out.println(p62UniquePaths.uniquePaths(3, 2));
+        System.out.println(p62UniquePaths.uniquePaths(7, 3));
     }
 
 }
