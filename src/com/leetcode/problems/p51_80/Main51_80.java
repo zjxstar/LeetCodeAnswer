@@ -12,7 +12,8 @@ public class Main51_80 {
 //        solve55();
 //        solve56();
 //        solve58();
-        solve62();
+//        solve62();
+        solve63();
     }
 
     private static void solve53() {
@@ -67,6 +68,12 @@ public class Main51_80 {
         P62UniquePaths p62UniquePaths = new P62UniquePaths();
         System.out.println(p62UniquePaths.uniquePaths(3, 2));
         System.out.println(p62UniquePaths.uniquePaths(7, 3));
+    }
+
+    private static void solve63() {
+        P63UniquePaths2 p63UniquePaths2 = new P63UniquePaths2();
+        int[][] grid = {{0,0,0}, {0, 1, 0}, {0,0,0}};
+        System.out.println(p63UniquePaths2.uniquePathsWithObstacles(grid));
     }
 
 }
