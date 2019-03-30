@@ -5,6 +5,12 @@ package com.zjx.algorithm.sort;
  */
 public class QuickSort {
 
+    /**
+     * 已最左元素为轴
+     * @param nums
+     * @param left
+     * @param right
+     */
     public void quickSort1(int[] nums, int left, int right) {
         int flag = nums[left]; // 最左边的为轴
         int i = left;
@@ -77,6 +83,13 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 随机快速排序
+     * @param nums
+     * @param left
+     * @param right
+     * @return
+     */
     private int partition(int[] nums, int left, int right) {
         // 取随机位置
         int randIndex = (int) (Math.random() * (right - left + 1) + left);
