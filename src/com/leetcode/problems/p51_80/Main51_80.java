@@ -13,7 +13,8 @@ public class Main51_80 {
 //        solve56();
 //        solve58();
 //        solve62();
-        solve63();
+//        solve63();
+        solve59();
     }
 
     private static void solve53() {
@@ -74,6 +75,17 @@ public class Main51_80 {
         P63UniquePaths2 p63UniquePaths2 = new P63UniquePaths2();
         int[][] grid = {{0,0,0}, {0, 1, 0}, {0,0,0}};
         System.out.println(p63UniquePaths2.uniquePathsWithObstacles(grid));
+    }
+
+    private static void solve59() {
+        P59SpiralMatrix2 p59SpiralMatrix2 = new P59SpiralMatrix2();
+        int[][] result = p59SpiralMatrix2.generateMatrix(4);
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
