@@ -1,6 +1,7 @@
 package com.leetcode.problems.p21_50;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -35,7 +36,6 @@ public class P46Permutations {
 
         List<Integer> trace = new ArrayList<>();
         backtrace(nums, result, trace, 1, nums.length);
-
         return result;
     }
 

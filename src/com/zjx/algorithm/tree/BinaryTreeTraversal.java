@@ -1,8 +1,6 @@
 package com.zjx.algorithm.tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
@@ -166,6 +164,51 @@ public class BinaryTreeTraversal {
 
             if (curNode.right != null)
                 queue.offer(curNode.right); // 右孩子存在的话进队列
+        }
+
+    }
+
+    /**
+     * 二叉树的Z字形层次遍历
+     * @param root
+     */
+    public void levelZOrder(TreeNode root) {
+        if (root == null) {
+            return; // 空树
+        }
+        TreeNode curNode = root; // 工作指针
+        LinkedList<TreeNode> queue = new LinkedList<>(); // 工作队列
+        int depth = 0; // 深度
+
+        queue.offer(curNode); // 队列早期只有一个根节点
+
+        while (!queue.isEmpty()) {
+            int size = queue.size(); // 某一层的节点数
+            for (int i = 0; i < size; i++) {
+                if (depth % 2 == 1) {
+                    // 从左到右
+                    curNode = queue.pollLast(); // 从队列尾部取
+                    System.out.print(curNode.value + " ");
+                    // 因为是从尾部取，所以插到前面
+                    if (curNode.right != null) { // 因为是头插，所以先判断右孩子
+                        queue.offerFirst(curNode.right);
+                    }
+                    if (curNode.left != null) {
+                        queue.offerFirst(curNode.left);
+                    }
+
+                } else {
+                    curNode = queue.poll(); // 从队列头取
+                    System.out.print(curNode.value + " ");
+                    if (curNode.left != null) {
+                        queue.offer(curNode.left);
+                    }
+                    if (curNode.right != null) {
+                        queue.offer(curNode.right);
+                    }
+                }
+            }
+            depth++;
         }
 
     }

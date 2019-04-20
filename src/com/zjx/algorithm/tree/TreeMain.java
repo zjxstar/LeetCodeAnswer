@@ -8,6 +8,8 @@ public class TreeMain {
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
         BinaryTreeTraversal binaryTreeTraversal = new BinaryTreeTraversal();
         System.out.println("先序遍历：递归");
         binaryTreeTraversal.preOrderTraversal(root);
@@ -29,6 +31,9 @@ public class TreeMain {
         System.out.println();
         System.out.println("层次遍历：");
         binaryTreeTraversal.levelOrder(root);
+        System.out.println();
+        System.out.println("Z字型层次遍历：");
+        binaryTreeTraversal.levelZOrder(root);
     }
 
 }
