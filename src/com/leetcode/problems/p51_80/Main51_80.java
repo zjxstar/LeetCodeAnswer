@@ -14,7 +14,8 @@ public class Main51_80 {
 //        solve58();
 //        solve62();
 //        solve63();
-        solve59();
+//        solve59();
+        solve60();
     }
 
     private static void solve53() {
@@ -86,6 +87,11 @@ public class Main51_80 {
             }
             System.out.println();
         }
+    }
+
+    private static void solve60() {
+        P60TheKthPermutation p60 = new P60TheKthPermutation();
+        System.out.println(p60.getPermutation(4, 9));
     }
 
 }
