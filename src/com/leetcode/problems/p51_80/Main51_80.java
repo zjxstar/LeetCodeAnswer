@@ -15,7 +15,8 @@ public class Main51_80 {
 //        solve62();
 //        solve63();
 //        solve59();
-        solve60();
+//        solve60();
+        solve61();
     }
 
     private static void solve53() {
@@ -92,6 +93,18 @@ public class Main51_80 {
     private static void solve60() {
         P60TheKthPermutation p60 = new P60TheKthPermutation();
         System.out.println(p60.getPermutation(4, 9));
+    }
+
+    private static void solve61() {
+        P61RotateRight p61 = new P61RotateRight();
+        ListNode head = new ListNode(0);
+        head.next = new ListNode(1);
+        head.next.next = new ListNode(2);
+        ListNode newHead = p61.rotateRight(head, 4);
+        while (newHead != null) {
+            System.out.print(newHead.val + " ");
+            newHead = newHead.next;
+        }
     }
 
 }
