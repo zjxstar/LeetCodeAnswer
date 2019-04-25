@@ -186,7 +186,7 @@ public class BinaryTreeTraversal {
             int size = queue.size(); // 某一层的节点数
             for (int i = 0; i < size; i++) {
                 if (depth % 2 == 1) {
-                    // 从左到右
+                    // 从右到左
                     curNode = queue.pollLast(); // 从队列尾部取
                     System.out.print(curNode.value + " ");
                     // 因为是从尾部取，所以插到前面

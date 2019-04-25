@@ -10,7 +10,7 @@ public class SearchSolution {
         if (left > right) {
             return -1;
         }
-        int mid = (left + right) / 2;
+        int mid = (left + right) >> 1;
         if (nums[mid] == target) {
             return mid;
         } else if (nums[mid] > target) {
