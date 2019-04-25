@@ -16,7 +16,8 @@ public class Main51_80 {
 //        solve63();
 //        solve59();
 //        solve60();
-        solve61();
+//        solve61();
+        solve66();
     }
 
     private static void solve53() {
@@ -104,6 +105,15 @@ public class Main51_80 {
         while (newHead != null) {
             System.out.print(newHead.val + " ");
             newHead = newHead.next;
+        }
+    }
+
+    private static void solve66() {
+        P66PlusOne p66 = new P66PlusOne();
+        int[] digits = {9, 9, 9};
+        int[] result = p66.plusOne(digits);
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " ");
         }
     }
 
