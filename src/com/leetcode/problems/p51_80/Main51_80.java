@@ -18,7 +18,8 @@ public class Main51_80 {
 //        solve60();
 //        solve61();
 //        solve66();
-        solve67();
+//        solve67();
+        solve69();
     }
 
     private static void solve53() {
@@ -123,4 +124,8 @@ public class Main51_80 {
         System.out.println(p67.addBinary("11", "1"));
     }
 
+    private static void solve69() {
+        P69MySqrt p69 = new P69MySqrt();
+        System.out.println(p69.mySqrt2(2));
+    }
 }
