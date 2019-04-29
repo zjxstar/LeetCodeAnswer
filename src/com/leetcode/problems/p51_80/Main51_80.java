@@ -17,7 +17,8 @@ public class Main51_80 {
 //        solve59();
 //        solve60();
 //        solve61();
-        solve66();
+//        solve66();
+        solve67();
     }
 
     private static void solve53() {
@@ -115,6 +116,11 @@ public class Main51_80 {
         for (int i = 0; i < result.length; i++) {
             System.out.print(result[i] + " ");
         }
+    }
+
+    private static void solve67() {
+        P67AddBinary p67 = new P67AddBinary();
+        System.out.println(p67.addBinary("11", "1"));
     }
 
 }
