@@ -19,7 +19,8 @@ public class Main51_80 {
 //        solve61();
 //        solve66();
 //        solve67();
-        solve69();
+//        solve69();
+        solve70();
     }
 
     private static void solve53() {
@@ -127,5 +128,10 @@ public class Main51_80 {
     private static void solve69() {
         P69MySqrt p69 = new P69MySqrt();
         System.out.println(p69.mySqrt2(2));
+    }
+
+    private static void solve70() {
+        P70ClimbStairs p70 = new P70ClimbStairs();
+        System.out.println(p70.climbStairs(44));
     }
 }
