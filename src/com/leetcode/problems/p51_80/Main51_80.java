@@ -20,7 +20,8 @@ public class Main51_80 {
 //        solve66();
 //        solve67();
 //        solve69();
-        solve70();
+//        solve70();
+        solve71();
     }
 
     private static void solve53() {
@@ -133,5 +134,15 @@ public class Main51_80 {
     private static void solve70() {
         P70ClimbStairs p70 = new P70ClimbStairs();
         System.out.println(p70.climbStairs(44));
+    }
+
+    private static void solve71() {
+        P71SimplifyPath p71 = new P71SimplifyPath();
+        System.out.println(p71.simplifyPath("/a/../../b/../c//.//"));
+        System.out.println(p71.simplifyPath("/home/"));
+        System.out.println(p71.simplifyPath("/../"));
+        System.out.println(p71.simplifyPath("/home//foo/"));
+        System.out.println(p71.simplifyPath("/a/./b/../../c/"));
+        System.out.println(p71.simplifyPath("/a//b////c/d//././/.."));
     }
 }
