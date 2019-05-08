@@ -22,7 +22,8 @@ public class Main51_80 {
 //        solve69();
 //        solve70();
 //        solve71();
-        solve73();
+//        solve73();
+        solve74();
     }
 
     private static void solve53() {
@@ -157,5 +158,12 @@ public class Main51_80 {
             }
             System.out.println();
         }
+    }
+
+    private static void solve74() {
+        P74SearchMatrix p74 = new P74SearchMatrix();
+//        int[][] matrix = {{1,   3,  5,  7},{10, 11, 16, 20},{23, 30, 34, 50}};
+        int[][] matrix = {};
+        System.out.println(p74.searchMatrix(matrix, 0));
     }
 }
