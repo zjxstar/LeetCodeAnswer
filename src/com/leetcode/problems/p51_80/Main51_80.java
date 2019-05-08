@@ -21,7 +21,8 @@ public class Main51_80 {
 //        solve67();
 //        solve69();
 //        solve70();
-        solve71();
+//        solve71();
+        solve73();
     }
 
     private static void solve53() {
@@ -144,5 +145,17 @@ public class Main51_80 {
         System.out.println(p71.simplifyPath("/home//foo/"));
         System.out.println(p71.simplifyPath("/a/./b/../../c/"));
         System.out.println(p71.simplifyPath("/a//b////c/d//././/.."));
+    }
+
+    private static void solve73() {
+        int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
+        P73SetZeros p73 = new P73SetZeros();
+        p73.setZeroes2(matrix);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
