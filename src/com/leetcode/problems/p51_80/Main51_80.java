@@ -23,7 +23,8 @@ public class Main51_80 {
 //        solve70();
 //        solve71();
 //        solve73();
-        solve74();
+//        solve74();
+        solve75();
     }
 
     private static void solve53() {
@@ -165,5 +166,14 @@ public class Main51_80 {
 //        int[][] matrix = {{1,   3,  5,  7},{10, 11, 16, 20},{23, 30, 34, 50}};
         int[][] matrix = {};
         System.out.println(p74.searchMatrix(matrix, 0));
+    }
+
+    private static void solve75() {
+        P75SortColors p75 = new P75SortColors();
+        int nums[] = {2,0,2,1,1,0};
+        p75.sortColors2(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
     }
 }
