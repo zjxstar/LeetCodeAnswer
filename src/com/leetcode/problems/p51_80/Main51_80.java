@@ -24,7 +24,8 @@ public class Main51_80 {
 //        solve71();
 //        solve73();
 //        solve74();
-        solve75();
+//        solve75();
+        solve77();
     }
 
     private static void solve53() {
@@ -174,6 +175,17 @@ public class Main51_80 {
         p75.sortColors2(nums);
         for (int num : nums) {
             System.out.print(num + " ");
+        }
+    }
+
+    private static void solve77() {
+        P77Combine p77 = new P77Combine();
+        List<List<Integer>> result = p77.combine(4, 2);
+        for (List<Integer> list : result) {
+            for (int num : list) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
         }
     }
 }
