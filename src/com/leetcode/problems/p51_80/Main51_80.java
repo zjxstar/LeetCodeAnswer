@@ -25,7 +25,8 @@ public class Main51_80 {
 //        solve73();
 //        solve74();
 //        solve75();
-        solve77();
+//        solve77();
+        solve79();
     }
 
     private static void solve53() {
@@ -187,5 +188,11 @@ public class Main51_80 {
             }
             System.out.println();
         }
+    }
+
+    private static void solve79() {
+        P79Exist p79 = new P79Exist();
+        char[][] board = {{'A','B','C','E'}, {'S','F','C','S'}, {'A','D','E','E'}};
+        System.out.println(p79.exist(board, "ABCB"));
     }
 }
