@@ -26,7 +26,8 @@ public class Main51_80 {
 //        solve74();
 //        solve75();
 //        solve77();
-        solve79();
+//        solve79();
+        solve80();
     }
 
     private static void solve53() {
@@ -194,5 +195,26 @@ public class Main51_80 {
         P79Exist p79 = new P79Exist();
         char[][] board = {{'A','B','C','E'}, {'S','F','C','S'}, {'A','D','E','E'}};
         System.out.println(p79.exist(board, "ABCB"));
+    }
+
+    private static void solve80() {
+        P80RemoveDuplicates p80 = new P80RemoveDuplicates();
+        int[] nums1 = {1,1,1,2,2,3};
+        System.out.println(p80.removeDuplicates(nums1));
+        for (int num : nums1) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        int[] nums2 = {0,0,1,1,1,1,2,3,3};
+        System.out.println(p80.removeDuplicates(nums2));
+        for (int num : nums2) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        int[] nums3 = {0,1,2,3,4,5,6,7};
+        System.out.println(p80.removeDuplicates(nums3));
+        for (int num : nums3) {
+            System.out.print(num + " ");
+        }
     }
 }
