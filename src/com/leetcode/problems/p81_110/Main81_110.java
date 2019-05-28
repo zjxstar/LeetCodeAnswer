@@ -5,8 +5,16 @@ import java.util.List;
 public class Main81_110 {
 
     public static void main(String[] args) {
+        solveP81();
 //        solveP94();
-        solveP101();
+//        solveP101();
+    }
+
+    private static void solveP81() {
+        P81Search p81 = new P81Search();
+        int[] nums = {2,5,6,0,0,1,2};
+        System.out.println(p81.search(nums, 0));
+        System.out.println(p81.search(nums, 3));
     }
 
     private static void solveP94() {
