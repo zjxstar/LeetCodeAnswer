@@ -5,9 +5,17 @@ import java.util.List;
 public class Main81_110 {
 
     public static void main(String[] args) {
-        solveP81();
+//        solveP81();
 //        solveP94();
 //        solveP101();
+        String s1 = new String("hello");
+        System.out.println(s1);
+        System.out.println(s1.intern());
+        String s2 = "hello";
+        System.out.println(s2);
+//        String s1 = new String("hello");
+//        String s3 = new String("hello");
+        System.out.println(s1 == s2);
     }
 
     private static void solveP81() {
